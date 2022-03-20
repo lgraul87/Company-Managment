@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+<h:head>
+	<title>Not present in rendered output</title>
+	<h:outputStylesheet library="css" name="main.css" />
+	<h:outputStylesheet library="css" name="index.css" />
+
+</h:head>
+<h:body>
+
+	<div class="header-container">
+		<p:graphicImage class="img-icon-header" name="company-icon.jpg"
+			library="img" />
+
+		<p:outputLabel class="main-text-header"
+			value="Company-MG" />
+
+		<div>
+			<p:linkButton styleClass="ui-button-outlined ui-button-success"
+				outcome="NewFile" value="Sign in"></p:linkButton>
+		</div>
+		<div>
+			<p:linkButton styleClass="ui-button-outlined ui-button-help"
+				outcome="NewFile" value="Sign up"></p:linkButton>
+		</div>
+	</div>
+	<div class="body-container">
+		
+		<p:outputLabel class="main-text-body"
+			value="Company-MG, your manager application..." />
+		
+		<p:graphicImage class="img-body" name="body-img.jpg" library="img" />
+
+	</div>
+
+</h:body>
+</html>
