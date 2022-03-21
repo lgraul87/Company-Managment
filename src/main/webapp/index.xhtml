@@ -5,37 +5,63 @@
 	xmlns:h="http://java.sun.com/jsf/html"
 	xmlns:p="http://primefaces.org/ui">
 <h:head>
-	<title>Not present in rendered output</title>
-	<h:outputStylesheet library="css" name="main.css" />
-	<h:outputStylesheet library="css" name="index.css" />
+	<title>Company Management</title>
 
+	<link rel="icon" type="image/x-icon"
+		href="https://cdn-icons-png.flaticon.com/512/681/681392.png" />
+
+	<h:outputStylesheet library="css" name="main.css" />
+
+	<h:outputStylesheet library="css" name="index.css" />
 </h:head>
 <h:body>
+	<div class="container">
+		<div class="grid-container">
 
-	<div class="header-container">
-		<p:graphicImage class="img-icon-header" name="company-icon.jpg"
-			library="img" />
+			<div class="item-1">
+				<p:graphicImage class="img-icon-header" name="company-icon.jpg"
+					library="img" />
+			</div>
 
-		<p:outputLabel class="main-text-header"
-			value="Company-MG" />
+			<div class="item-2">
+				<p:outputLabel class="main-text-header" value="Company Management" />
+			</div>
 
-		<div>
-			<p:linkButton styleClass="ui-button-outlined ui-button-success"
-				outcome="NewFile" value="Sign in"></p:linkButton>
-		</div>
-		<div>
-			<p:linkButton styleClass="ui-button-outlined ui-button-help"
-				outcome="NewFile" value="Sign up"></p:linkButton>
+			<div class="item-3">
+				<div class="grid-container-buttons">
+					<div>
+						<p:linkButton styleClass="rounded-button ui-button-secondary"
+							outcome="login" value="Sign in"></p:linkButton>
+					</div>
+
+					<div>
+						<p:linkButton styleClass="rounded-button ui-button-info"
+							outcome="sign-up" value="Sign up"></p:linkButton>
+					</div>
+				</div>
+			</div>
+
+			<div class="item-4">
+				<div class="grid-container-text">
+					<div>
+						<p:outputLabel class="title-body"
+							value="Company-MG, your manager application..." />
+					</div>
+
+					<div>
+						<p:outputLabel class="text-body"
+							value="Manage your company with Compant-MG and you will have everything under control" />
+					</div>
+				</div>
+			</div>
+
+			<div class="item-5">
+				<p:graphicImage class="img-body" name="body-img.jpg" library="img" />
+			</div>
+
+			<div class="item-6">Footer</div>
+
 		</div>
 	</div>
-	<div class="body-container">
-		
-		<p:outputLabel class="main-text-body"
-			value="Company-MG, your manager application..." />
-		
-		<p:graphicImage class="img-body" name="body-img.jpg" library="img" />
-
-	</div>
-
 </h:body>
 </html>

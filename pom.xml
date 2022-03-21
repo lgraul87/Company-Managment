@@ -71,6 +71,21 @@
 			<version>5.3.17</version>
 		</dependency>
 		
+<!-- https://mvnrepository.com/artifact/org.ocpsoft.rewrite/rewrite-servlet -->
+<dependency>
+    <groupId>org.ocpsoft.rewrite</groupId>
+    <artifactId>rewrite-servlet</artifactId>
+    <version>3.5.1.Final</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/org.ocpsoft.rewrite/rewrite-config-prettyfaces -->
+<dependency>
+    <groupId>org.ocpsoft.rewrite</groupId>
+    <artifactId>rewrite-config-prettyfaces</artifactId>
+    <version>3.5.1.Final</version>
+</dependency>
+
+
 		
 	</dependencies>
 
