@@ -9,5 +9,51 @@
 	<h:outputStylesheet library="css" name="main.css" />
 	<h:outputStylesheet library="css" name="login.css" />
 </h:head>
-<h:body></h:body>
+<h:body>
+	<h:form>
+		<div class="container">
+			<div class="grid-container">
+				<div class="item-1">TITLE</div>
+
+				<div class="item-2">
+					<div class="p-col-12 p-md-4">
+						<div class="ui-inputgroup">
+							<div class="ui-inputgroup-addon">
+								<i class="pi pi-user"></i>
+							</div>
+							<p:inputText placeholder="Username" />
+						</div>
+					</div>
+				</div>
+
+				<div class="item-3">
+					<div class="p-col-12 p-md-4">
+						<div class="ui-inputgroup">
+							<div class="ui-inputgroup-addon">
+								<i class="pi pi-key"></i>
+							</div>
+							<p:password placeholder="Password" id="toggle"
+								value="#{passwordView.password6}" toggleMask="true"
+								redisplay="true" />
+						</div>
+					</div>
+				</div>
+
+				<div class="item-4">SIGN IN</div>
+
+				<div class="item-5">SIGN-OUT BUTTON</div>
+
+				<div class="item-6">FORGOT PASSWORD</div>
+
+			</div>
+
+		</div>
+
+
+
+
+
+
+	</h:form>
+</h:body>
 </html>
