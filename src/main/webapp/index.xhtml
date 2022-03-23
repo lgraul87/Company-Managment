@@ -5,7 +5,7 @@
 	xmlns:h="http://java.sun.com/jsf/html"
 	xmlns:p="http://primefaces.org/ui">
 <h:head>
-	<title>Company Management</title>
+	<title>Finacom</title>
 
 	<link rel="icon" type="image/x-icon"
 		href="https://cdn-icons-png.flaticon.com/512/681/681392.png" />
@@ -15,53 +15,26 @@
 	<h:outputStylesheet library="css" name="index.css" />
 </h:head>
 <h:body>
-	<div class="container">
-		<div class="grid-container">
-
-			<div class="item-1">
-				<p:graphicImage class="img-icon-header" name="company-icon.jpg"
-					library="img" />
-			</div>
-
+	<div class="grid-container">
+			<div class="item-1"></div>
 			<div class="item-2">
-				<p:outputLabel class="main-text-header" value="Company Management" />
-			</div>
-
-			<div class="item-3">
 				<div class="grid-container-buttons">
-					<div>
+					<div class="title-body">Finacom</div>
+					<div class="text-body">
+						Join us and choose your type of business. <br></br> Have your
+						application tailored and have your finances under control with our
+						application.
+					</div>
+					<div class="item-1-button">
 						<p:linkButton styleClass="rounded-button ui-button-secondary"
 							outcome="login" value="Sign in"></p:linkButton>
 					</div>
-
-					<div>
+					<div class="item-2-button">
 						<p:linkButton styleClass="rounded-button ui-button-info"
 							outcome="sign-up" value="Sign up"></p:linkButton>
 					</div>
 				</div>
 			</div>
-
-			<div class="item-4">
-				<div class="grid-container-text">
-					<div>
-						<p:outputLabel class="title-body"
-							value="Company-MG, your manager application..." />
-					</div>
-
-					<div>
-						<p:outputLabel class="text-body"
-							value="Manage your company with Compant-MG and you will have everything under control" />
-					</div>
-				</div>
-			</div>
-
-			<div class="item-5">
-				<p:graphicImage class="img-body" name="body-img.jpg" library="img" />
-			</div>
-
-			<div class="item-6">Footer</div>
-
 		</div>
-	</div>
 </h:body>
 </html>

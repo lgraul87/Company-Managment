@@ -16,6 +16,7 @@
 				<div class="item-1">TITLE</div>
 
 				<div class="item-2">
+					Username or email address
 					<div class="p-col-12 p-md-4">
 						<div class="ui-inputgroup">
 							<div class="ui-inputgroup-addon">
@@ -24,9 +25,15 @@
 							<p:inputText placeholder="Username" />
 						</div>
 					</div>
+
+
+
 				</div>
 
+
+
 				<div class="item-3">
+					Password
 					<div class="p-col-12 p-md-4">
 						<div class="ui-inputgroup">
 							<div class="ui-inputgroup-addon">
@@ -37,23 +44,30 @@
 								redisplay="true" />
 						</div>
 					</div>
+					Forgot password?
+					<p:link outcome="NewFile" value="Click here">
+					</p:link>
 				</div>
 
-				<div class="item-4">SIGN IN</div>
-
-				<div class="item-5">SIGN-OUT BUTTON</div>
-
-				<div class="item-6">FORGOT PASSWORD</div>
-
+				<div class="item-4">
+					<p:button value="Enviar"
+						styleClass="rounded-button ui-button-success" />
+				</div>
+				<div class="item-5"></div>
 			</div>
 
 		</div>
-
-
-
-
-
-
+		<div class="container-new-account">
+			<div class="grid-container-new-account">
+				<div class="item-1-new-account">
+					<div>
+						New in Finacom?
+						<p:link outcome="NewFile" value="Create an account">
+						</p:link>
+					</div>
+				</div>
+			</div>
+		</div>
 	</h:form>
 </h:body>
 </html>
