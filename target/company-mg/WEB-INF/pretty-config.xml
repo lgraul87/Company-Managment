@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<pretty-config
+	xmlns="http://ocpsoft.org/schema/rewrite-config-prettyfaces"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://ocpsoft.org/xml/ns/prettyfaces/rewrite-config-prettyfaces.xsd">
+
+	<url-mapping id="login">
+		<pattern value="/login" /> <!--url pattern -->
+		<view-id value="/faces/login.xhtml" /> <!--name of the page you want to change the url -->
+	</url-mapping>
+
+	<url-mapping id="signUp">
+		<pattern value="/signUp" /> <!--url pattern -->
+		<view-id value="/faces/signUp.xhtml" /> <!--name of the page you want to change the url -->
+	</url-mapping>
+	
+	<url-mapping id="inbox">
+		<pattern value="/inbox" /> <!--url pattern -->
+		<view-id value="/faces/inbox.xhtml" /> <!--name of the page you want to change the url -->
+	</url-mapping>
+
+	<url-mapping id="password-reset">
+		<pattern value="/password-reset" /> <!--url pattern -->
+		<view-id value="/faces/password-reset.xhtml" /> <!--name of the page you want to change the url -->
+	</url-mapping>
+
+	<url-mapping id="NewFile">
+		<pattern value="/NewFile" /> <!--url pattern -->
+		<view-id value="/faces/NewFile.xhtml" /> <!--name of the page you want to change the url -->
+	</url-mapping>
+
+	<url-mapping id="plantilla">
+		<pattern value="/plantilla" /> <!--url pattern -->
+		<view-id value="/faces/plantilla.xhtml" /> <!--name of the page you want to change the url -->
+	</url-mapping>
+
+</pretty-config>

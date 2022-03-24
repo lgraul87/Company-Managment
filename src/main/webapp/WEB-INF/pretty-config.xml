@@ -13,6 +13,11 @@
 		<pattern value="/sign-up" /> <!--url pattern -->
 		<view-id value="/faces/sign-up.xhtml" /> <!--name of the page you want to change the url -->
 	</url-mapping>
+	
+	<url-mapping id="inbox">
+		<pattern value="/inbox" /> <!--url pattern -->
+		<view-id value="/faces/inbox.xhtml" /> <!--name of the page you want to change the url -->
+	</url-mapping>
 
 	<url-mapping id="password-reset">
 		<pattern value="/password-reset" /> <!--url pattern -->
@@ -24,7 +29,7 @@
 		<view-id value="/faces/NewFile.xhtml" /> <!--name of the page you want to change the url -->
 	</url-mapping>
 
-<url-mapping id="plantilla">
+	<url-mapping id="plantilla">
 		<pattern value="/plantilla" /> <!--url pattern -->
 		<view-id value="/faces/plantilla.xhtml" /> <!--name of the page you want to change the url -->
 	</url-mapping>
