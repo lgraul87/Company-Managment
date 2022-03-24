@@ -1,5 +1,6 @@
 @charset "ISO-8859-1";
 
+/* BLOCK STYLE */
 .ui-inputgroup .ui-password {
 	padding-left: 0 !important;
 }
@@ -11,6 +12,22 @@
 	width: 14rem;
 }
 
+body .ui-fieldset {
+	border: 1px solid #dee2e6;
+	background: #ffffff;
+	color: #495057;
+	border-radius: 4px;
+	width: 50px !important;
+}
+
+body .ui-button.ui-button-success {
+	background: #689F38;
+	color: #ffffff;
+	border: 1px solid #689F38;
+	width: 260px;
+}
+
+/* CONTAINER STYLE */
 .container {
 	display: grid;
 	justify-content: center;
@@ -83,19 +100,4 @@
 
 .item-1-new-account {
 	grid-area: 1/1/2/2;
-}
-
-body .ui-fieldset {
-	border: 1px solid #dee2e6;
-	background: #ffffff;
-	color: #495057;
-	border-radius: 4px;
-	width: 50px !important;
-}
-
-body .ui-button.ui-button-success {
-	background: #689F38;
-	color: #ffffff;
-	border: 1px solid #689F38;
-	width: 260px;
 }

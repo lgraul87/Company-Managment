@@ -13,14 +13,14 @@ body .ui-button.ui-button-text-only .ui-button-text {
 /* CONTAINER STYLE */
 .grid-container {
 	display: grid;
-	background-color: cornsilk;
+	background-color: #B3BBF9;
 	grid-template-columns: auto auto auto;
 	height: 95vh;
 	justify-content: center;
 }
 
 .grid-container div {
-	background-color: #EFD7B6;
+	background-color: #FFFFFF;
 
 	/* 	align-self: center;
 	justify-self: center; */
@@ -52,7 +52,7 @@ body .ui-button.ui-button-text-only .ui-button-text {
 	width: 40vw;
 	align-self: center;
 	justify-self: center;
-	height: 80vh;
+	height: 75.5vh;
 }
 
 /* TEXT STYLE */

@@ -14,8 +14,19 @@
 		<view-id value="/faces/sign-up.xhtml" /> <!--name of the page you want to change the url -->
 	</url-mapping>
 
+	<url-mapping id="password-reset">
+		<pattern value="/password-reset" /> <!--url pattern -->
+		<view-id value="/faces/password-reset.xhtml" /> <!--name of the page you want to change the url -->
+	</url-mapping>
+
 	<url-mapping id="NewFile">
 		<pattern value="/NewFile" /> <!--url pattern -->
 		<view-id value="/faces/NewFile.xhtml" /> <!--name of the page you want to change the url -->
 	</url-mapping>
+
+<url-mapping id="plantilla">
+		<pattern value="/plantilla" /> <!--url pattern -->
+		<view-id value="/faces/plantilla.xhtml" /> <!--name of the page you want to change the url -->
+	</url-mapping>
+
 </pretty-config>
