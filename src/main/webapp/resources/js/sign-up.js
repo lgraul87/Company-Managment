@@ -15,11 +15,19 @@ var companyNameBoolean = false;
 var businessTypeBoolean = false;
 
 function send() {
+
+	validateName(); validateSurname(); validateSecondSurname(); validateStreet();
+	validateStreetNumber(); validateFloorNumber(); validateDoorLetterNumber(); validatePoblation(); validateCity();
+	validateBankAccount(); validatePhone(); validateEmail(); validateCompanyName(); validateBusinessType();
+
 	if (nameBoolean && surnameBoolean && secondSurnameBoolean && streetBoolean && floorNumberBoolean
 		&& doorNumberLetterBoolean && populationBoolean && cityBoolean && bankAccountBoolean && phoneBoolean
 		&& emailBoolean && companyNameBoolean && businessTypeBoolean) {
 		document.getElementById('Form:submit-button').disabled = false;
 		document.getElementById('Form:submit-button').classList.remove("ui-state-disabled");
+	} else {
+		document.getElementById('Form:submit-button').disabled = true
+		document.getElementById('Form:submit-button').classList.add("ui-state-disabled");
 	}
 }
 function validateName() {
@@ -34,7 +42,6 @@ function validateName() {
 		document.getElementById('Form:labelName').innerHTML = "Name"
 		nameBoolean = true;
 	}
-	send();
 }
 function validateSurname() {
 	if (inputSize > document.getElementById('Form:surname-input').value.length) {
@@ -48,7 +55,6 @@ function validateSurname() {
 		document.getElementById('Form:labelSurname').innerHTML = "Surname"
 		surnameBoolean = true;
 	}
-	send();
 }
 function validateSecondSurname() {
 	if (inputSize > document.getElementById('Form:second-surname-input').value.length) {
@@ -62,7 +68,6 @@ function validateSecondSurname() {
 		document.getElementById('Form:labelSecondSurname').innerHTML = "Second surname"
 		secondSurnameBoolean = true;
 	}
-	send();
 }
 function validateStreet() {
 	if (inputSize > document.getElementById('Form:street-input').value.length) {
@@ -76,7 +81,6 @@ function validateStreet() {
 		document.getElementById('Form:labelStreet').innerHTML = "Street"
 		streetBoolean = true;
 	}
-	send();
 }
 function validateStreetNumber() {
 	if (inputSize > document.getElementById('Form:street-number-input').value.length) {
@@ -90,7 +94,6 @@ function validateStreetNumber() {
 		document.getElementById('Form:labelStreetNumber').innerHTML = "Street number"
 		streetNumberBoolean = true;
 	}
-	send();
 }
 function validateFloorNumber() {
 	if (inputSize > document.getElementById('Form:floor-number-input').value.length) {
@@ -104,7 +107,7 @@ function validateFloorNumber() {
 		document.getElementById('Form:labelFloorNumber').innerHTML = "Floor number"
 		floorNumberBoolean = true;
 	}
-	send();
+
 }
 function validateDoorLetterNumber() {
 	if (inputSize > document.getElementById('Form:door-letter-number-input').value.length) {
@@ -118,7 +121,7 @@ function validateDoorLetterNumber() {
 		document.getElementById('Form:labelDoorLetterNumber').innerHTML = "Door number or letter"
 		doorNumberLetterBoolean = true;
 	}
-	send();
+
 }
 function validatePoblation() {
 	if (inputSize > document.getElementById('Form:population-input').value.length) {
@@ -132,7 +135,7 @@ function validatePoblation() {
 		document.getElementById('Form:labelPopulation').innerHTML = "Population"
 		populationBoolean = true;
 	}
-	send();
+
 }
 function validateCity() {
 	if (inputSize > document.getElementById('Form:city-input').value.length) {
@@ -146,7 +149,7 @@ function validateCity() {
 		document.getElementById('Form:labelCity').innerHTML = "City"
 		cityBoolean = true;
 	}
-	send();
+
 }
 function validateBankAccount() {
 	if (inputSize > document.getElementById('Form:bank-account-input').value.length) {
@@ -160,7 +163,7 @@ function validateBankAccount() {
 		document.getElementById('Form:labelBankAccount').innerHTML = "Bank account"
 		bankAccountBoolean = true;
 	}
-	send();
+
 }
 function validatePhone() {
 	if (inputSize > document.getElementById('Form:phone-input').value.length) {
@@ -174,7 +177,7 @@ function validatePhone() {
 		document.getElementById('Form:labelPhone').innerHTML = "Phone"
 		phoneBoolean = true;
 	}
-	send();
+
 }
 function validateEmail() {
 	if (inputSize > document.getElementById('Form:email-input').value.length) {
@@ -188,7 +191,7 @@ function validateEmail() {
 		document.getElementById('Form:labelEmail').innerHTML = "E-mail"
 		emailBoolean = true;
 	}
-	send();
+
 }
 function validateCompanyName() {
 	if (inputSize > document.getElementById('Form:company-name-input').value.length) {
@@ -202,7 +205,7 @@ function validateCompanyName() {
 		document.getElementById('Form:labelCompanyName').innerHTML = "Company name"
 		companyNameBoolean = true;
 	}
-	send();
+
 }
 function validateBusinessType() {
 	if (inputSize > document.getElementById('Form:business-type-input').value.length) {
@@ -216,5 +219,5 @@ function validateBusinessType() {
 		document.getElementById('Form:labelBusinessType').innerHTML = "Business type"
 		businessTypeBoolean = true;
 	}
-	send();
+
 }

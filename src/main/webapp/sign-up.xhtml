@@ -19,16 +19,15 @@
 				</div>
 				<div class="item-2">
 					<span class="ui-float-label"> <p:inputText id="name-input"
-							value="#{accountBean.name}"  onblur="validateName()"
-							required="true" /> <p:outputLabel id="labelName" for="@previous"
-							value="Name" />
+							value="#{accountBean.name}" onkeyup="send()" required="true" />
+						<p:outputLabel id="labelName" for="@previous" value="Name" />
 					</span>
 				</div>
 
 				<div class="item-3">
 					<span class="ui-float-label"> <p:inputText
 							id="surname-input" value="#{accountBean.surname}"
-							onblur="validateSurname()" required="true" /> <p:outputLabel
+							onkeyup="send()" required="true" /> <p:outputLabel
 							id="labelSurname" for="@previous" value="Surname" />
 					</span>
 				</div>
@@ -36,23 +35,22 @@
 				<div class="item-4">
 					<span class="ui-float-label"> <p:inputText
 							id="second-surname-input" value="#{accountBean.secondSurname}"
-							onblur="validateSecondSurname()" required="true" /> <p:outputLabel
+							onkeyup="send()" required="true" /> <p:outputLabel
 							id="labelSecondSurname" for="@previous" value="Second surname" />
 					</span>
 				</div>
 
 				<div class="item-5">
 					<span class="ui-float-label"> <p:inputText id="street-input"
-							value="#{accountBean.street}" onblur="validateStreet()"
-							required="true" /> <p:outputLabel id="labelStreet"
-							for="@previous" value="Street" />
+							value="#{accountBean.street}" onkeyup="send()" required="true" />
+						<p:outputLabel id="labelStreet" for="@previous" value="Street" />
 					</span>
 				</div>
 
 				<div class="item-6">
 					<span class="ui-float-label"> <p:inputText
 							id="street-number-input" value="#{accountBean.streetNumber}"
-							onblur="validateStreetNumber()" required="true" /> <p:outputLabel
+							onkeyup="send()" required="true" /> <p:outputLabel
 							id="labelStreetNumber" for="@previous" value="Street number" />
 					</span>
 				</div>
@@ -60,7 +58,7 @@
 				<div class="item-7">
 					<span class="ui-float-label"> <p:inputText
 							id="floor-number-input" value="#{accountBean.floorNumber}"
-							onblur="validateFloorNumber()" required="true" /> <p:outputLabel
+							onkeyup="send()" required="true" /> <p:outputLabel
 							id="labelFloorNumber" for="@previous" value="Floor number" />
 					</span>
 				</div>
@@ -68,68 +66,63 @@
 				<div class="item-8">
 					<span class="ui-float-label"> <p:inputText
 							id="door-letter-number-input"
-							value="#{accountBean.doorLetterNumber}"
-							onblur="validateDoorLetterNumber()" required="true" /> <p:outputLabel
-							id="labelDoorLetterNumber" for="@previous"
-							value="Door number or letter" />
+							value="#{accountBean.doorLetterNumber}" onkeyup="send()"
+							required="true" /> <p:outputLabel id="labelDoorLetterNumber"
+							for="@previous" value="Door number or letter" />
 					</span>
 				</div>
 
 				<div class="item-9">
 					<span class="ui-float-label"> <p:inputText
 							id="population-input" value="#{accountBean.population}"
-							onblur="validatePoblation()" required="true"></p:inputText> <p:outputLabel
+							onkeyup="send()" required="true" /> <p:outputLabel
 							id="labelPopulation" for="@previous" value="Population" />
 					</span>
 				</div>
 				<div class="item-10">
 					<span class="ui-float-label"> <p:inputText id="city-input"
-							value="#{accountBean.city}" onblur="validateCity()"
-							required="true" /> <p:outputLabel id="labelCity" for="@previous"
-							value="City" />
+							value="#{accountBean.city}" onkeyup="send()" required="true" />
+						<p:outputLabel id="labelCity" for="@previous" value="City" />
 					</span>
 				</div>
 				<div class="item-11">
 					<span class="ui-float-label"> <p:inputText
 							id="bank-account-input" value="#{accountBean.bankAccount}"
-							onblur="validateBankAccount()" required="true" /> <p:outputLabel
+							onkeyup="send()" required="true" /> <p:outputLabel
 							id="labelBankAccount" for="@previous" value="Bank account" />
 					</span>
 				</div>
 				<div class="item-12">
 					<span class="ui-float-label"> <p:inputText id="phone-input"
-							value="#{accountBean.phone}" onblur="validatePhone()"
-							required="true" /> <p:outputLabel id="labelPhone"
-							for="@previous" value="Phone" />
+							value="#{accountBean.phone}" onkeyup="send()" required="true" />
+						<p:outputLabel id="labelPhone" for="@previous" value="Phone" />
 					</span>
 				</div>
 				<div class="item-13">
 					<span class="ui-float-label"> <p:inputText id="email-input"
-							value="#{accountBean.email}" onblur="validateEmail()"
-							required="true" /> <p:outputLabel id="labelEmail"
-							for="@previous" value="E-mail" />
+							value="#{accountBean.email}" onkeyup="send()" required="true" />
+						<p:outputLabel id="labelEmail" for="@previous" value="E-mail" />
 					</span>
 				</div>
 				<div class="item-14">
 					<span class="ui-float-label"> <p:inputText
 							id="company-name-input" value="#{accountBean.companyName}"
-							onblur="validateCompanyName()" required="true" /> <p:outputLabel
+							onkeyup="send()" required="true" /> <p:outputLabel
 							id="labelCompanyName" for="@previous" value="Company name" />
 					</span>
 				</div>
 				<div class="item-15">
 					<span class="ui-float-label"> <p:inputText
 							id="business-type-input" value="#{accountBean.businessType}"
-							onblur="validateBusinessType()" required="true" /> <p:outputLabel
+							onkeyup="send()" required="true" /> <p:outputLabel
 							id="labelBusinessType" for="@previous" value="Business Type" />
 					</span>
 				</div>
 
 				<div class="item-16">
-					<p:commandButton  id="submit-button" update="@form" value="Enviar" 
+					<p:commandButton id="submit-button" update="@form" value="Enviar"
 						disabled="true" styleClass="ui-button-raised"
-						onclick="#{accountBean.addNewAccount()}" 
-						action="window.location.href = 'inbox';"/>
+						onclick="#{accountBean.addNewAccount()}; window.location.href='inbox'; " />
 				</div>
 
 				<div class="item-17"></div>
