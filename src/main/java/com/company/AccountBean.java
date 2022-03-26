@@ -9,7 +9,6 @@ import javax.faces.bean.SessionScoped;
 @SessionScoped
 public class AccountBean implements Serializable {
 
-
 	/**
 	 * 
 	 */
@@ -30,19 +29,30 @@ public class AccountBean implements Serializable {
 	private String businessType;
 
 	public void addNewAccount() {
-		if (this.name != null && email != null && surname != null && secondSurname != null && street != null
-				&& streetNumber != null && floorNumber != null && doorLetterNumber != null && population != null
-				&& city != null && bankAccount != null && phone != null && companyName != null
-				&& businessType != null) {
-			System.out.println("AÑADIENDO");
-		}
-	}
+		if (this.name != null && this.email != null && this.surname != null && this.secondSurname != null
+				&& this.street != null && this.streetNumber != null && this.floorNumber != null
+				&& this.doorLetterNumber != null && this.population != null && this.city != null
+				&& this.bankAccount != null && this.phone != null && companyName != null && this.businessType != null) {
 
-	public String navigate() {
-		return "inbox.xhtml";
-	}
-	public static long getSerialversionuid() {
-		return serialVersionUID;
+			// AQUI METEMOS LOS VALORES EN LA BBDD
+			this.name = null;
+			this.email = null;
+			this.surname = null;
+			this.secondSurname = null;
+			this.street = null;
+			this.streetNumber = null;
+			this.floorNumber = null;
+			this.doorLetterNumber = null;
+			this.population = null;
+			this.city = null;
+			this.bankAccount = null;
+			this.phone = null;
+			this.companyName = null;
+			this.businessType = null;
+
+			// AQUI ENVIAMOS UN CORREO DE CONFIRMACION
+
+		}
 	}
 
 	public String getName() {
@@ -157,4 +167,7 @@ public class AccountBean implements Serializable {
 		this.businessType = businessType;
 	}
 
+	public static long getSerialversionuid() {
+		return serialVersionUID;
+	}
 }

@@ -18,6 +18,11 @@
 		<pattern value="/inbox" /> <!--url pattern -->
 		<view-id value="/faces/inbox.xhtml" /> <!--name of the page you want to change the url -->
 	</url-mapping>
+	
+	<url-mapping id="cafeBar">
+		<pattern value="/cafeBar" /> <!--url pattern -->
+		<view-id value="/faces/cafeBar.xhtml" /> <!--name of the page you want to change the url -->
+	</url-mapping>
 
 	<url-mapping id="password-reset">
 		<pattern value="/password-reset" /> <!--url pattern -->

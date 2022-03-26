@@ -48,13 +48,15 @@ body .ui-button.ui-button-success {
 	box-shadow: 0 4px 8px 0 rgb(0 0 0/ 20%), 0 6px 20px 0 rgb(0 0 0/ 19%);
 }
 
-.grid-container div {
+.grid-container div  {
+	border: 1px solid white;
 	align-self: center;
-	justify-self: center;
+	justify-self: center; 
 }
 
 .item-1 {
 	grid-area: 1/1/2/2;
+	text-align: center;
 }
 
 .item-2 {
@@ -100,4 +102,16 @@ body .ui-button.ui-button-success {
 
 .item-1-new-account {
 	grid-area: 1/1/2/2;
+}
+/* IMAGE STYLE */
+.icon {
+	width: 50px;
+	border-radius: 50%;
+}
+
+/* TEXT STYLE */
+.title-login {
+	font-size: 1.5em;
+	font-style: italic;
+	font-weight: bold;
 }
