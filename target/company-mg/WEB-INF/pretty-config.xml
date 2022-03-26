@@ -9,14 +9,19 @@
 		<view-id value="/faces/login.xhtml" /> <!--name of the page you want to change the url -->
 	</url-mapping>
 
-	<url-mapping id="signUp">
-		<pattern value="/signUp" /> <!--url pattern -->
-		<view-id value="/faces/signUp.xhtml" /> <!--name of the page you want to change the url -->
+	<url-mapping id="sign-up">
+		<pattern value="/sign-up" /> <!--url pattern -->
+		<view-id value="/faces/sign-up.xhtml" /> <!--name of the page you want to change the url -->
 	</url-mapping>
 	
 	<url-mapping id="inbox">
 		<pattern value="/inbox" /> <!--url pattern -->
 		<view-id value="/faces/inbox.xhtml" /> <!--name of the page you want to change the url -->
+	</url-mapping>
+	
+	<url-mapping id="cafeBar">
+		<pattern value="/cafeBar" /> <!--url pattern -->
+		<view-id value="/faces/cafeBar.xhtml" /> <!--name of the page you want to change the url -->
 	</url-mapping>
 
 	<url-mapping id="password-reset">

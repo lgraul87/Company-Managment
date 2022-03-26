@@ -5,9 +5,24 @@
 	xmlns:h="http://java.sun.com/jsf/html"
 	xmlns:p="http://primefaces.org/ui">
 <h:head>
-	<title>Inbox</title>
+	<title>Added new account</title>
+	<link rel="icon" type="image/x-icon"
+		href="https://cdn-icons-png.flaticon.com/512/390/390973.png" />
 	<h:outputStylesheet library="css" name="main.css" />
 	<h:outputStylesheet library="css" name="inbox.css" />
 </h:head>
-<h:body></h:body>
+<h:body>
+
+	<div class="grid-container">
+		<div class="item-1">
+			<p:graphicImage class="icon" name="succes.png" library="img" />
+			<p class="title-login">¡Registrado! Gracias.</p>
+		</div>
+		<div class="item-2">
+			<p:button value="OK" styleClass="rounded-button ui-button-success"
+				outcome="cafeBar" />
+		</div>
+		
+	</div>
+</h:body>
 </html>

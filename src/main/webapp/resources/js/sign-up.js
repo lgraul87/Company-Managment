@@ -1,4 +1,20 @@
 var inputSize = 3;
+var minInputSizeName = 3;
+/*var nameBoolean = false;
+var surnameBoolean = false;
+var secondSurnameBoolean = false;
+var streetBoolean = false;
+var streetNumberBoolean = false;
+var floorNumberBoolean = false;
+var doorNumberLetterBoolean = false;
+var populationBoolean = false;
+var cityBoolean = false;
+var bankAccountBoolean = false;
+var phoneBoolean = false;
+var emailBoolean = false;
+var companyNameBoolean = false;
+var businessTypeBoolean = false;*/
+
 var nameBoolean = false;
 var surnameBoolean = false;
 var secondSurnameBoolean = false;
@@ -31,14 +47,14 @@ function send() {
 	}
 }
 function validateName() {
-	if (inputSize > document.getElementById('Form:name-input').value.length) {
+	if (minInputSizeName > document.getElementById('Form:name-input').value.length) {
 		nameBoolean = false;
 	} else {
 		nameBoolean = true;
 	}
 }
 function reportName() {
-	if (inputSize > document.getElementById('Form:name-input').value.length) {
+	if (minInputSizeName > document.getElementById('Form:name-input').value.length) {
 		document.getElementById('Form:name-input').style.borderColor = "red";
 		document.getElementById('Form:labelName').style.color = "red";
 		document.getElementById('Form:labelName').innerHTML = "Name (min " + inputSize + " letters) *"

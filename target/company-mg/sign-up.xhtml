@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+<h:head>
+	<title>New account</title>
+
+	<link rel="icon" type="image/x-icon"
+		href="https://cdn-icons-png.flaticon.com/512/2583/2583145.png" />
+
+	<h:outputStylesheet library="css" name="main.css" />
+	<h:outputStylesheet library="css" name="sign-up.css" />
+	<h:outputScript library="js" name="sign-up.js" />
+</h:head>
+<h:body>
+	<h:form id="Form">
+		<div class="container">
+			<div class="grid-container">
+				<div class="item-1">
+					<p class="uno">NEW ACCOUNT</p>
+				</div>
+				<div class="item-2">
+					<span class="ui-float-label"> <p:inputText id="name-input"
+							value="#{accountBean.name}" onkeyup="send(); reportName()"
+							required="true" /> <p:outputLabel id="labelName" for="@previous"
+							value="Name" />
+					</span>
+				</div>
+
+				<div class="item-3">
+					<span class="ui-float-label"> <p:inputText
+							id="surname-input" value="#{accountBean.surname}"
+							onkeyup="send(); reportSurname()" required="true" /> <p:outputLabel
+							id="labelSurname" for="@previous" value="Surname" />
+					</span>
+				</div>
+
+				<div class="item-4">
+					<span class="ui-float-label"> <p:inputText
+							id="second-surname-input" value="#{accountBean.secondSurname}"
+							onkeyup="send(); reportSecondSurname()" required="true" /> <p:outputLabel
+							id="labelSecondSurname" for="@previous" value="Second surname" />
+					</span>
+				</div>
+
+				<div class="item-5">
+					<span class="ui-float-label"> <p:inputText id="street-input"
+							value="#{accountBean.street}" onkeyup="send(); reportStreet();"
+							required="true" /> <p:outputLabel id="labelStreet"
+							for="@previous" value="Street" />
+					</span>
+				</div>
+
+				<div class="item-6">
+					<span class="ui-float-label"> <p:inputText
+							id="street-number-input" value="#{accountBean.streetNumber}"
+							onkeyup="send(); reportStreetNumber()" required="true" /> <p:outputLabel
+							id="labelStreetNumber" for="@previous" value="Street number" />
+					</span>
+				</div>
+
+				<div class="item-7">
+					<span class="ui-float-label"> <p:inputText
+							id="floor-number-input" value="#{accountBean.floorNumber}"
+							onkeyup="send(); reportFloorNumber()" required="true" /> <p:outputLabel
+							id="labelFloorNumber" for="@previous" value="Floor number" />
+					</span>
+				</div>
+
+				<div class="item-8">
+					<span class="ui-float-label"> <p:inputText
+							id="door-letter-number-input"
+							value="#{accountBean.doorLetterNumber}"
+							onkeyup="send(); reportDoorLetterNumber()" required="true" /> <p:outputLabel
+							id="labelDoorLetterNumber" for="@previous"
+							value="Door number or letter" />
+					</span>
+				</div>
+
+				<div class="item-9">
+					<span class="ui-float-label"> <p:inputText
+							id="population-input" value="#{accountBean.population}"
+							onkeyup="send(); reportPoblation();" required="true" /> <p:outputLabel
+							id="labelPopulation" for="@previous" value="Population" />
+					</span>
+				</div>
+				<div class="item-10">
+					<span class="ui-float-label"> <p:inputText id="city-input"
+							value="#{accountBean.city}" onkeyup="send(); reportCity()"
+							required="true" /> <p:outputLabel id="labelCity" for="@previous"
+							value="City" />
+					</span>
+				</div>
+				<div class="item-11">
+					<span class="ui-float-label"> <p:inputText
+							id="bank-account-input" value="#{accountBean.bankAccount}"
+							onkeyup="send(); reportBankAccount()" required="true" /> <p:outputLabel
+							id="labelBankAccount" for="@previous" value="Bank account" />
+					</span>
+				</div>
+				<div class="item-12">
+					<span class="ui-float-label"> <p:inputText id="phone-input"
+							value="#{accountBean.phone}" onkeyup="send(); reportPhone()"
+							required="true" /> <p:outputLabel id="labelPhone"
+							for="@previous" value="Phone" />
+					</span>
+				</div>
+				<div class="item-13">
+					<span class="ui-float-label"> <p:inputText id="email-input"
+							value="#{accountBean.email}" onkeyup="send(); reportEmail()"
+							required="true" /> <p:outputLabel id="labelEmail"
+							for="@previous" value="E-mail" />
+					</span>
+				</div>
+				<div class="item-14">
+					<span class="ui-float-label"> <p:inputText
+							id="company-name-input" value="#{accountBean.companyName}"
+							onkeyup="send(); reportCompanyName()" required="true" /> <p:outputLabel
+							id="labelCompanyName" for="@previous" value="Company name" />
+					</span>
+				</div>
+				<div class="item-15">
+					<span class="ui-float-label"> <p:inputText
+							id="business-type-input" value="#{accountBean.businessType}"
+							onkeyup="send(); reportBusinessType()" required="true" /> <p:outputLabel
+							id="labelBusinessType" for="@previous" value="Business Type" />
+					</span>
+				</div>
+
+				<div class="item-16">
+					<p:commandButton id="submit-button" update="@form" value="Enviar"
+						disabled="true" styleClass="ui-button-raised"
+						onclick="#{accountBean.addNewAccount()}; window.location.href='inbox'; " />
+				</div>
+
+				<div class="item-17"></div>
+
+			</div>
+
+		</div>
+
+	</h:form>
+</h:body>
+</html>
